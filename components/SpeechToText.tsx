@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { MicrophoneIcon, StopIcon } from "@heroicons/react/24/solid";
+import dynamic from 'next/dynamic';
 
 interface SpeechToTextProps {
   onTranscript: (text: string) => void;
@@ -51,52 +52,53 @@ interface SpeechRecognitionConstructor {
   prototype: SpeechRecognition;
 }
 
-export default function SpeechToText({ onTranscript }: SpeechToTextProps) {
+// Create a client-side only component
+const SpeechToTextComponent = ({ onTranscript }: SpeechToTextProps) => {
   const [isListening, setIsListening] = useState(false);
   const [recognition, setRecognition] = useState<SpeechRecognition | null>(null);
   const [lastTranscriptTime, setLastTranscriptTime] = useState(0);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const SpeechRecognition = (window.SpeechRecognition || window.webkitSpeechRecognition) as SpeechRecognitionConstructor | undefined;
-      
-      if (SpeechRecognition) {
-        const recognition = new SpeechRecognition();
-        recognition.continuous = false;
-        recognition.interimResults = true;
-        recognition.lang = ""; // Empty string for auto language detection
+    setIsClient(true);
+    const SpeechRecognition = (window.SpeechRecognition || window.webkitSpeechRecognition) as SpeechRecognitionConstructor | undefined;
+    
+    if (SpeechRecognition) {
+      const recognition = new SpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      recognition.lang = ""; // Empty string for auto language detection
 
-        recognition.onresult = (event: SpeechRecognitionEvent) => {
-          const transcript = Array.from(event.results)
-            .map((result: SpeechRecognitionResult) => result[0])
-            .map((result: SpeechRecognitionAlternative) => result.transcript)
-            .join("");
+      recognition.onresult = (event: SpeechRecognitionEvent) => {
+        const transcript = Array.from(event.results)
+          .map((result: SpeechRecognitionResult) => result[0])
+          .map((result: SpeechRecognitionAlternative) => result.transcript)
+          .join("");
 
-          if (event.results[0].isFinal) {
-            const now = Date.now();
-            if (now - lastTranscriptTime > 1000) { // Only process if more than 1 second has passed
-              onTranscript(transcript);
-              setLastTranscriptTime(now);
-            }
+        if (event.results[0].isFinal) {
+          const now = Date.now();
+          if (now - lastTranscriptTime > 1000) { // Only process if more than 1 second has passed
+            onTranscript(transcript);
+            setLastTranscriptTime(now);
           }
-        };
+        }
+      };
 
-        recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
-          console.error("Speech recognition error", event.error);
-          setIsListening(false);
-        };
+      recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
+        console.error("Speech recognition error", event.error);
+        setIsListening(false);
+      };
 
-        recognition.onend = () => {
-          setIsListening(false);
-          if (isListening) {
-            setTimeout(() => {
-              recognition.start();
-            }, 100);
-          }
-        };
+      recognition.onend = () => {
+        setIsListening(false);
+        if (isListening) {
+          setTimeout(() => {
+            recognition.start();
+          }, 100);
+        }
+      };
 
-        setRecognition(recognition);
-      }
+      setRecognition(recognition);
     }
   }, [onTranscript, isListening, lastTranscriptTime]);
 
@@ -111,6 +113,10 @@ export default function SpeechToText({ onTranscript }: SpeechToTextProps) {
       setIsListening(true);
     }
   };
+
+  if (!isClient) {
+    return null; // Return null on server-side
+  }
 
   return (
     <Button
@@ -132,7 +138,12 @@ export default function SpeechToText({ onTranscript }: SpeechToTextProps) {
       )}
     </Button>
   );
-}
+};
+
+// Export a dynamically imported version of the component
+export default dynamic(() => Promise.resolve(SpeechToTextComponent), {
+  ssr: false // Disable server-side rendering
+});
 
 declare global {
   interface Window {
