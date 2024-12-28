@@ -1,0 +1,281 @@
+[33mcommit 16b2ff0910b8d640ac9613a9c77bf46880653b89[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mspeech-added[m[33m, [m[1;31morigin/speech-added[m[33m)[m
+Author: svsairevanth12 <venkatasairevanthsannidhi@gmail.com>
+Date:   Sat Dec 28 15:49:41 2024 +0530
+
+    Added speech-to-text feature
+
+[33mcommit f3d0ec6a1962994d4d6981b6cc3677edc061b749[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: svsairevanth12 <venkatasairevanthsannidhi@gmail.com>
+Date:   Sat Dec 28 15:08:54 2024 +0530
+
+    Initial commit
+
+[33mcommit 4e86d5a6645eaac747a8befff337bcb6aa6c1ae1[m
+Author: Omar Sanseviero <osanseviero@google.com>
+Date:   Fri Dec 20 22:39:53 2024 +0100
+
+    Fix README
+
+[33mcommit db42ea01f9889e54d34b312eb36d98d260d59ddc[m
+Author: Omar Sanseviero <osanseviero@google.com>
+Date:   Fri Dec 20 22:38:57 2024 +0100
+
+    Update to Gemini plus make more minimal
+
+[33mcommit 0d61d6581eb959a04476fb0d6e22e02d9b06cf16[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Dec 6 10:02:50 2024 -0800
+
+    added llama 3.3
+
+[33mcommit 2f7e8bc22c58fa5bdbe7d9c98ca380bd5d496041[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Nov 15 13:59:59 2024 -0500
+
+    textarea input, added qwen 32b, removed icons
+
+[33mcommit d60846c9d775cd447065a290fc47e82c7dd3a71e[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Wed Nov 6 22:27:26 2024 -0500
+
+    added LICENSE, contributing.md, and roadmap
+
+[33mcommit 0888ad39c5cd61924bbade0bcd32fe3bdf91d522[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Wed Nov 6 15:46:22 2024 -0500
+
+    removed example for now
+
+[33mcommit 27bd1497b609e242372dfbb73961f38e023f1f04[m
+Merge: 637ca4a 71a0093
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Wed Nov 6 15:05:19 2024 -0500
+
+    Merge pull request #41 from Nutlope/use-new-together-sdk
+    
+    Use new together SDK
+
+[33mcommit 71a0093f5d05af55d13c61bcd107750cad0eea8c[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Wed Nov 6 15:02:08 2024 -0500
+
+    Use new together sdk
+
+[33mcommit 637ca4a32b6e01c2558e853a5f06c5ecff720be6[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Nov 5 12:17:00 2024 -0500
+
+    updated README
+
+[33mcommit fb72389d3e6023e644330ea964566ebc41f0065b[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Nov 5 12:15:38 2024 -0500
+
+    readme update
+
+[33mcommit a42fa96c7be0a8a3750a42c282dabe5910cb46a3[m
+Merge: bdf2a05 d37b10e
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Nov 5 12:08:09 2024 -0500
+
+    Merge pull request #37 from Nutlope/few-shot-examples
+    
+    Added few-shot examples to the prompt
+
+[33mcommit d37b10eab5e3db6e3a62dfd3297b60463eb6b972[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Nov 5 12:07:02 2024 -0500
+
+    removed console log
+
+[33mcommit 9ec4b5571594cf74f0ee5281f0217bbfeec9de55[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Nov 5 12:05:26 2024 -0500
+
+    updated README
+
+[33mcommit d65a9aa159bbc4ac34370f0993add6471681bab3[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Nov 5 12:04:35 2024 -0500
+
+    more small changes
+
+[33mcommit b1c07da05aa2fc2ce8cb8ec5339ccf41507b5345[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Thu Oct 31 12:14:47 2024 -0400
+
+    added qwen 2.5 model
+
+[33mcommit 125de40f552fdedc4d60c91f612cc530264f700e[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Sat Oct 26 00:38:45 2024 -0500
+
+    added llama 3.2 90b model
+
+[33mcommit 12d0c6c279fa441b89699695a9264b6b630dfc17[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Mon Oct 14 11:25:32 2024 -0400
+
+    added
+
+[33mcommit bdf2a059ab30b620ec47855ddc6eac985d490fea[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Fri Sep 13 13:00:17 2024 -0400
+
+    Use together sdk v4 (#31)
+
+[33mcommit 504a12175242200e246e81814ddf1006a6ec9958[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Wed Sep 11 17:20:29 2024 -0400
+
+    revert sdk PR
+
+[33mcommit 1faa464713cc83ed3ae6b6fde3b5f44bf77f98da[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Mon Aug 19 09:57:45 2024 -0400
+
+    removed lucide-react
+
+[33mcommit 333a2833d3f9eb2a9a5710c9ac558600f358e2cc[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Tue Aug 13 12:54:58 2024 -0400
+
+    remove shadcn feature flag
+
+[33mcommit 0e149cb2a9d81c1f360acecc7b215e7d7daf7947[m
+Merge: bc880ca 8be1996
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Mon Aug 12 11:55:43 2024 -0400
+
+    Merge pull request #18 from Nutlope/improve-share-styles
+    
+    Make share preview use full width/height
+
+[33mcommit 8be1996c36a521fe0ab9ce1e61675cec5f02163d[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Mon Aug 12 11:53:00 2024 -0400
+
+    Make share preview use full width/height
+
+[33mcommit bc880ca0a7a3ad1c53539532a7f0646445611d3e[m
+Merge: 003ce16 04b24b3
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Mon Aug 12 11:20:25 2024 -0400
+
+    Merge pull request #15 from Nutlope/add-shadcn
+    
+    Add shadcn support (feature flagged)
+
+[33mcommit 04b24b300a7bc6bbc5f40ec2b60150bd8cca663c[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Mon Aug 12 11:18:13 2024 -0400
+
+    Put shadcn behind a feature flag
+
+[33mcommit 47e33573bdacef59e9f667ab8a5d690a5f1a53af[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Sat Aug 10 14:04:41 2024 -0400
+
+    Extract a shared CodeViewer
+
+[33mcommit 4a7327e27d48bce858b807cef31b2a02dfb5746c[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Sat Aug 10 13:24:23 2024 -0400
+
+    Mobile styling for options
+
+[33mcommit 3e39b41f42277ab5c4a406888c5fe58e21618551[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Sat Aug 10 13:14:36 2024 -0400
+
+    Wire up shadcn toggle
+
+[33mcommit 5c05d7ed7df892d4b61bfbd20406f703da30f3d6[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Sat Aug 10 11:53:04 2024 -0400
+
+    Fixup merge
+
+[33mcommit a1456128e1d4b3b630fb6807751bcf249e06a5ba[m
+Merge: 0acc2c4 003ce16
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Sat Aug 10 11:46:19 2024 -0400
+
+    Merge branch 'main' into add-shadcn
+
+[33mcommit 0acc2c4593a34ddb39c85516899f4d585ec50954[m
+Author: Sam Selikoff <sam.selikoff@gmail.com>
+Date:   Sat Aug 10 11:44:09 2024 -0400
+
+    Fix duplicate tailwind classes
+
+[33mcommit 003ce161cd586da7a68fbf7d119be62cf30eef0c[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 18:26:04 2024 -0700
+
+    added react-router-dom as a dependency
+
+[33mcommit 8fc0499ee42b8679b3c999f3918788f08db9bcb5[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 12:55:23 2024 -0700
+
+    edited README
+
+[33mcommit 99d785173975496b2547c8c41814123f5c7c7cb0[m
+Merge: 190e267 068e8f1
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:59:42 2024 -0700
+
+    Merge pull request #12 from Nutlope/share-links
+    
+    Sharable apps
+
+[33mcommit 068e8f10c242e52fa002644bdda9dc9f646e79f9[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:53:08 2024 -0700
+
+    wip
+
+[33mcommit 778823429cbdf25f398de21a9a96c7a58fefcc57[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:52:10 2024 -0700
+
+    wip
+
+[33mcommit 905ccb6847f206c44529d0d834e6720d469c7299[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:48:36 2024 -0700
+
+    wip
+
+[33mcommit 9dc0cc4e4d883acb7a8bb9feb4f708e59830288b[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:42:57 2024 -0700
+
+    wip
+
+[33mcommit efb17b1cd049d30bac0c1a22581a77003510e9ea[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:35:52 2024 -0700
+
+    Add dynamic og route for share page
+
+[33mcommit b485a4a8c2f605c7abf98487ae5e12f39954d786[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Fri Aug 9 11:14:06 2024 -0700
+
+    wip
+
+[33mcommit c17fca94f0ebd4be108a26acc2f2bc7c741c17ee[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Thu Aug 8 14:02:37 2024 -0700
+
+    working version
+
+[33mcommit 8984b53465a2d86b93c3f7613e02704e392ddc8c[m
+Author: Hassan El Mghari <hassan4709@gmail.com>
+Date:   Thu Aug 8 12:58:14 2024 -0700
+
+    added migration
+
+[33mcommit 8e0
